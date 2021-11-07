@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>LifeStyle Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="budget">
+        <div class="budget-title">
+          Available Budget in<span class="budget-title-month"> %</span>
+        </div>
+
+        <div class="budget-value">+ 2,345.64</div>
+        <div class="budget-income clearfix">
+          <div class="budget-income-text">Income</div>
+          <div class="right">
+            <div class="budget-income-value">+ 4,300</div>
+            <div class="budget-income-percentage">&nbsp;</div>
+          </div>
+        </div>
+        <div class="budget-expense clearfix">
+          <div class="budget-expense-text">Expense</div>
+          <div class="right clearfix">
+            <div class="budget-expense-value">-1,200</div>
+            <div class="budget-expense-percentage">45%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="add">
+        <div class="add-container">
+          <select class="add-type">
+            <option value="inc" selected>+</option>
+            <option value="exp">-</option>
+          </select>
+          <input type="text" class="add-desc" placeholder="Add description" />
+          <input type="number" class="add-value" placeholder="Add Value" />
+          <button class="add-btn">
+            <h1>
+              <i class="fa fa-check-circle-o icon" aria-hidden="true"></i>
+            </h1>
+          </button>
+        </div>
+      </div>
+
+      <div class="container clearfix">
+        <div class="income">
+          <h2 class="income-title">Income</h2>
+          <div class="income-list">
+            <!-- <div class="item clearfix" id="income-0">
+                        <div class="item-desc">salary</div>
+                        <div class="right clearfix">
+                            <div class="item-value">+ 2,100</div>
+                            <div class="item-delete">
+                                <button class="item-delete-btn"> <i class="fa fa-times-circle" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item clearfix" id="income-1">
+                        <div class="item-desc">sold car</div>
+                        <div class="right clearfix">
+                            <div class="item-value">+ 2,100</div>
+                            <div class="item-delete">
+                                <button class="item-delete-btn"> <i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>   -->
+          </div>
+        </div>
+
+        <div class="expense">
+          <h2 class="expense-title">expense</h2>
+          <div class="expense-list">
+            <!-- <div class="item clearfix" id="expense-0">
+                        <div class="item-desc">salary</div>
+                        <div class="right clearfix">
+                            <div class="item-value">+ 2,100</div>
+                            <div class="item-percentage">-21% </div>
+                            <div class="item-delete">
+                                <button class="item-delete-btn"> <i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item clearfix" id="expense-1">
+                        <div class="item-desc">bought shit</div>
+                        <div class="right clearfix">
+                            <div class="item-value">+ 2,100</div>
+                            <div class="item-percentage">-2%</div>
+                            <div class="item-delete">
+                                <button class="item-delete-btn"> <i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
